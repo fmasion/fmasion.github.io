@@ -1,4 +1,4 @@
 fmasion.github.com
 ==================
 
-open repository
+ivy style repository
