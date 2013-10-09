@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ivy-module version="2.0" xmlns:e="http://ant.apache.org/ivy/extra">
-	<info organisation="playvertx" module="playvertx_2.10" revision="0.1.1" status="release" publication="20131009143405">
+	<info organisation="playvertx" module="playvertx_2.10" revision="0.1.1" status="release" publication="20131009145245">
 		<description>
 		playVertx
 		</description>
