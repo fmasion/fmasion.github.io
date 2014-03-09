@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:e="http://ant.apache.org/ivy/extra">
+	<info organisation="playhazelcache" module="playhazelcache_2.10" revision="2.6.7" status="release" publication="20140309165434">
+		<description>
+		playHazelCache
+		</description>
+	</info>
+	<configurations>
+		<conf name="compile" visibility="public" description=""/>
+		<conf name="runtime" visibility="public" description="" extends="compile"/>
+		<conf name="test" visibility="public" description="" extends="runtime"/>
+		<conf name="provided" visibility="public" description=""/>
+		<conf name="optional" visibility="public" description=""/>
+		
+		
+		
+		
+		<conf name="sources" visibility="public" description=""/>
+		
+		<conf name="pom" visibility="public" description=""/>
+		
+	</configurations>
+	<publications>
+		<artifact name="playhazelcache_2.10" type="pom" ext="pom" conf="pom"/>
+		<artifact name="playhazelcache_2.10" type="jar" ext="jar" conf="compile"/>
+		<artifact name="playhazelcache_2.10" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+		
+	</publications>
+	<dependencies>
+		
+		<dependency org="org.scala-lang" name="scala-library" rev="2.10.3" conf="compile->default(compile)"/>
+		<dependency org="com.typesafe.play" name="play-cache_2.10" rev="2.2.2" conf="compile->default(compile)"/>
+		<dependency org="playhazelcast" name="playhazelcast_2.10" rev="2.6.7" conf="compile->default(compile)"/>
+		<dependency org="playhazelcastclient" name="playhazelcastclient_2.10" rev="2.6.7" conf="compile->default(compile)"/>
+		<dependency org="com.typesafe.play" name="play_2.10" rev="2.2.2" conf="compile->default(compile)"/>
+		<dependency org="com.typesafe.play" name="play-test_2.10" rev="2.2.2" conf="test->default(compile)"/>
+		
+	</dependencies>
+</ivy-module>
